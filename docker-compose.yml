@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+  tests:
+    build:
+      context: .
+    volumes:
+      - ./src:/usr/local/src/src
+      - ./tests:/usr/local/src/tests
+      - ./phpunit.xml:/usr/local/src/phpunit.xml
